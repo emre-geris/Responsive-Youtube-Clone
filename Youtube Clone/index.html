@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <!-- Meterial Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body class="dark-mode">
+    <header>
+      <!--NAVBAR-->
+      <nav id="navbar">
+        <div class="container">
+          <!--NAVBAR LEFTSIDE-->
+          <div class="navbar-leftside">
+            <span class="material-icons hover-button"> menu </span>
+            <a href="#body" class="hover-button">
+              <img src="images/yt_logo_rgb_dark.png" alt="" />
+            </a>
+          </div>
+          <!--NAVBAR MIDSIDE-->
+          <div class="navbar-midside">
+            <form action="">
+              <label for="search"></label>
+              <div class="search-container">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Search"
+                  class="hover-button"
+                />
+                <button type="submit" class="hover-button">
+                  <span class="material-icons"> search </span>
+                </button>
+              </div>
+            </form>
+            <span class="material-icons mic hover-button"> mic </span>
+          </div>
+          <!--NAVBAR RIGHTSIDE-->
+          <div class="navbar-rightside">
+            <span class="material-icons hover-button"> add </span>
+            <span class="material-icons hover-button notification-button">
+              notifications
+            </span>
+            <span class="material-icons hover-button"> person </span>
+          </div>
+        </div>
+      </nav>
+      <!--CATEGORIES-->
+      <nav id="categories">
+        <div class="categories-container">
+          <button class="categories hover-button">All</button
+          ><button class="categories hover-button cate1">Category1</button
+          ><button class="categories hover-button cate2">Category2</button
+          ><button class="categories hover-button cate3">Category3</button
+          ><button class="categories hover-button cate4">Category4</button
+          ><button class="categories hover-button cate5">Category5</button
+          ><button class="categories hover-button cate6">Category6</button
+          ><button class="categories hover-button cate7">Category7</button
+          ><button class="categories hover-button cate8">Category8</button
+          ><button class="categories hover-button cate9">Category9</button
+          ><button class="categories hover-button cate10">Category10</button>
+          <button class="categories more-button hover-button">
+            <span class="material-icons">chevron_right</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--SIDEBAR-->
+    <aside id="sidebar">
+      <div class="sidebar-container">
+        <div class="home-icon hover-button">
+          <span class="material-icons"> home </span>
+          <span>home</span>
+        </div>
+        <div class="shorts-icon hover-button">
+          <span class="material-icons"> slideshow </span>
+          <span>shorts</span>
+        </div>
+        <div class="subs-icon hover-button">
+          <span class="material-icons">subscriptions</span>
+          <span>Subs</span>
+        </div>
+        <div class="you-icon hover-button">
+          <span class="material-icons">account_circle</span>
+          <span>You</span>
+        </div>
+      </div>
+    </aside>
+    <!-- VIDEOS -->
+    <section id="videos">
+      <div class="videos-container">
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=1"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=2"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=3"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=4"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=5"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=6"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=7"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=8"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=9"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=10"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=11"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=12"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=13"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=14"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=15"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=16"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=17"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=18"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=19"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=20"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=21"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=22"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=23"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <img
+            src="https://picsum.photos/400/225?random=24"
+            alt="Video Thumbnail"
+            class="hover-button"
+          />
+          <div class="video-content">
+            <span class="material-icons hover-button">account_circle</span>
+            <div class="video-meta">
+              <h3 class="video-title hover-button">Video Title</h3>
+              <p class="channel-name hover-button">Channel Name</p>
+              <p class="video-stats hover-button">
+                30k views <span class="dot">•</span> 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

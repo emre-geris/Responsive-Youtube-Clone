@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* COLORS */
+:root {
+  --dark: #090909;
+  --dark-bg: rgba(10, 10, 10, 0.9);
+  --icon-bg: #2a2a2a;
+}
+
+/* HOVER EFFECTS */
+.hover-button {
+  transition: all 0.3s ease;
+}
+
+.hover-button:hover {
+  opacity: 0.4 !important;
+}
+
+/* GENERAL ADJUSTMENST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body.dark-mode {
+  background-color: var(--dark);
+}
+
+/* HEADER */
+/* NAVBAR */
+#navbar {
+  background-color: var(--dark-bg);
+  backdrop-filter: blur(12px);
+  height: 6rem;
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navbar span {
+  cursor: pointer;
+}
+
+#navbar .container {
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+  height: 100%;
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+/* NAVBAR LEFTSIDE */
+.navbar-leftside a {
+  display: inline-block;
+}
+
+.navbar-leftside a img {
+  object-fit: contain;
+  height: 2.6rem;
+  width: auto;
+}
+
+/* NAVBAR MIDSIDE */
+.navbar-midside form {
+  display: flex;
+  flex: 1;
+}
+
+.navbar-midside form .search-container {
+  border-radius: 2rem;
+  display: flex;
+  background-color: var(--dark);
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid #303030;
+}
+
+.navbar-midside form input {
+  padding: 1.4rem;
+  flex: 1;
+  background-color: var(--dark);
+  border: none;
+  color: #fff;
+}
+
+.navbar-midside .search-container button {
+  height: 100%;
+  background-color: var(--icon-bg);
+  color: #fff;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-midside .mic {
+  border-radius: 50%;
+  background-color: var(--icon-bg);
+  padding: 1rem;
+}
+
+/* NAVBAR RIGHTSIDE */
+
+.navbar-rightside {
+  justify-content: flex-end;
+}
+
+.navbar-rightside span {
+  border-radius: 50%;
+  background-color: var(--icon-bg);
+  padding: 1rem;
+}
+
+/* CATEGORIES */
+
+#categories {
+  position: fixed;
+  top: 6rem;
+  left: 6rem;
+  height: 6rem;
+  width: 100%;
+  background-color: var(--dark-bg);
+  backdrop-filter: blur(12px);
+}
+
+#categories .categories-container {
+  display: flex;
+  gap: 0.8vw;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 2vw;
+}
+
+.categories-container button {
+  padding: 0.9rem;
+  color: #fff;
+  background-color: var(--icon-bg);
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.categories-container .more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  visibility: hidden;
+}
+
+/*BODY*/
+/* SIDEBAR */
+
+#sidebar {
+  background-color: var(--dark-bg);
+  height: calc(100vh - 6rem);
+  width: 6rem;
+  padding: 2rem 0.5rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 6rem;
+  left: 0;
+}
+
+#sidebar .material-icons {
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+}
+
+.sidebar-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-container span {
+  text-align: center;
+}
+
+/* VIDEOS */
+
+#videos {
+  padding-top: 15rem;
+  padding-left: clamp(6rem, 8vw, 8rem);
+  padding-right: clamp(2rem, 5vw, 6rem);
+  padding-bottom: 4rem;
+}
+
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(clamp(280px, 30vw, 400px), 1fr)
+  );
+  gap: clamp(1rem, 2vw, 2rem);
+  align-items: center;
+}
+
+.video-card {
+  padding-bottom: 2rem;
+}
+
+.video-card img {
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+.video-card .video-content {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.video-content .material-icons {
+  font-size: 4rem;
+  padding-right: 0.9rem;
+  cursor: pointer;
+}
+
+.video-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.video-meta h3 {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.video-meta p {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: inline-block;
+}
